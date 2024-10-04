@@ -1,0 +1,24 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.clase1e1;
+
+import java.util.Scanner;
+
+public class Clase1E1 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String nombre;
+        char letra;
+        
+        letra = 'Q';
+        
+        System.out.println("Bienvenido al curso de Programación");
+        System.out.print("Ingrese su nombre: ");
+        nombre = sc.nextLine();
+        
+        System.out.println("Hola " + nombre + " bienvenid@");
+    }
+}
