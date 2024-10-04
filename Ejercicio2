@@ -1,0 +1,19 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.clase1e2;
+
+import javax.swing.JOptionPane;
+
+public class Clase1E2 {
+
+    public static void main(String[] args) {
+        int num;
+        String nombre;
+        
+        nombre = JOptionPane.showInputDialog("Digite su nombre: ");
+        
+        JOptionPane.showMessageDialog(null, "Hola: " + nombre);
+    }
+}
