@@ -1,0 +1,25 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.clase1e5;
+
+import javax.swing.JOptionPane;
+
+public class Clase1E5 {
+
+    public static void main(String[] args) {
+       double ingresoMensual = Double.parseDouble(JOptionPane.showInputDialog("Ingrese su ingreso mensual: "));
+        double gastoAlimentacion = Double.parseDouble(JOptionPane.showInputDialog("Ingrese su gasto mensual en alimentación: "));
+
+        // Calcular el porcentaje de gasto en alimentación
+        double porcentajeGastoAlimentacion = (gastoAlimentacion / ingresoMensual) * 100;
+
+        // Calcular el porcentaje disponible para otros gastos
+        double porcentajeDisponible = 100 - porcentajeGastoAlimentacion;
+
+        // Mostrar los resultados
+        JOptionPane.showMessageDialog(null, "Porcentaje de gasto en alimentación: " + porcentajeGastoAlimentacion + "%\n" +
+                                            "Porcentaje disponible para otros gastos: " + porcentajeDisponible + "%");
+    }
+}
