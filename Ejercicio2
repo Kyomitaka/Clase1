@@ -14,11 +14,11 @@ public class Clase1E2 {
         String nombre;
         
         nombre = JOptionPane.showInputDialog("Digite su nombre: ");
-        numero = 1234;
-        numDec = 123.4;
+        numero = Integer.parseInt(JOptionPane.showInputDialog("Digite un número entero: "));
+        numDec = Double.parseDouble(JOptionPane.showInputDialog("Digite un número real: "));
         
         JOptionPane.showMessageDialog(null, "Hola: " + nombre);
         JOptionPane.showMessageDialog(null, "Número: " + numero);
-        JOptionPane.showMessageDialog(null, "Número decimal: " + numDec);
+        JOptionPane.showMessageDialog(null, "Número: " + numDec);
     }
 }
