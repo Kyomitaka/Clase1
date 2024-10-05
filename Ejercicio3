@@ -1,0 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.clase1e3;
+
+import javax.swing.JOptionPane;
+
+public class Clase1E3 {
+
+    public static void main(String[] args) {
+        int nota1;
+        int nota2;
+        int nota3;
+        int nota4;
+        int suma;
+        double total;
+        
+        nota1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la nota del estudiante uno: "));
+        nota2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la nota del estudiante dos: "));
+        nota3 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la nota del estudiante tres: "));
+        nota4 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la nota del estudiante cuatro: "));
+      
+        suma = nota1 + nota2 + nota3 + nota4; 
+        total = suma / 4.0;
+        
+         JOptionPane.showMessageDialog(null, "El promedio total de los 4 estudiantes es de: " + total);
+    }
+}
