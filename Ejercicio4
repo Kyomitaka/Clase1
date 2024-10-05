@@ -1,0 +1,23 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.clase1e4;
+
+import javax.swing.JOptionPane;
+
+public class Clase1E4 {
+
+    public static void main(String[] args) {
+        String nombre;
+        int edad;
+        int edadfutura;
+        
+        nombre = JOptionPane.showInputDialog("Ingrese su nombre: "); 
+        edad = Integer.parseInt(JOptionPane.showInputDialog("Ingrese su edad: "));
+        
+        edadfutura = edad + 5;
+        
+        JOptionPane.showMessageDialog(null, "Dentro de 5 años " + nombre + " tendrá: " + edadfutura);
+    }
+}
