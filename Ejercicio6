@@ -1,0 +1,27 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.clase1e6;
+
+import javax.swing.JOptionPane;
+
+public class Clase1E6 {
+
+    public static void main(String[] args) {
+        String nombre;
+        double SueldoSemanal, SueldoMensual, Deducciones, SueldoNeto;
+        
+        nombre = JOptionPane.showInputDialog("Ingrese su nombre: ");
+        SueldoSemanal = Double.parseDouble(JOptionPane.showInputDialog("Ingrese su salario semanal: "));
+        SueldoMensual = SueldoSemanal * 4;
+        Deducciones = 9.34 / 100 * SueldoMensual;
+        SueldoNeto = SueldoMensual - Deducciones;
+        
+        JOptionPane.showMessageDialog(null,
+                                      "El empleado: "  + nombre + " " +
+                                      "Sueldo bruto: " + SueldoMensual + " " +
+                                      "Deducciones: "  + Deducciones + " " +
+                                      "Sueldo neto: "  + SueldoNeto + " " );
+    }
+}
