@@ -19,9 +19,9 @@ public class Clase1E6 {
         SueldoNeto = SueldoMensual - Deducciones;
         
         JOptionPane.showMessageDialog(null,
-                                      "El empleado: "  + nombre + " " +
-                                      "Sueldo bruto: " + SueldoMensual + " " +
-                                      "Deducciones: "  + Deducciones + " " +
-                                      "Sueldo neto: "  + SueldoNeto + " " );
+                                      "El empleado: "  + nombre + "\n" +
+                                      "Sueldo bruto: " + SueldoMensual + "\n" +
+                                      "Deducciones: "  + Deducciones + "\n" +
+                                      "Sueldo neto: "  + SueldoNeto + "\n" );
     }
 }
